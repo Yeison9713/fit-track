@@ -1,0 +1,25 @@
+{
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false,
+    // "editor.acceptSuggestionOnCommitCharacter": true,
+    "editor.tabSize": 4,
+    "editor.renderWhitespace": "boundary",
+    "prettier.useTabs": true,
+    "prettier.trailingComma": "none",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
+}
