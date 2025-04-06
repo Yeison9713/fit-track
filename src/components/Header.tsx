@@ -25,7 +25,7 @@ export default function Header() {
         <header className="bg-black text-white lg:py-6">
             <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px- lg:gap-x-16">
                 <div className="flex">
-                    <a href="#" className="-m-1.5 p-1.5 flex justify-around items-center gap-1.5">
+                    <Link href="/" className="-m-1.5 p-1.5 flex justify-around items-center gap-1.5">
                         <Image
                             alt="company"
                             src={logo}
@@ -35,7 +35,7 @@ export default function Header() {
                             className="object-cover object-center"
                         />
                         <span className="uppercase text-xl">Fit track</span>
-                    </a>
+                    </Link>
                 </div>
                 <div className="flex lg:hidden">
                     <button
@@ -62,15 +62,19 @@ export default function Header() {
                     ))}
                 </div>
                 <div className="hidden lg:flex lg:justify-center lg:gap-x-12 text-base">
-                    <button className="button-primary w-[12rem]">Iniciar sesión</button>
-                    <button className="button-primary w-[12rem]">Registro</button>
+                    <Link href="/login" className="button-primary w-[12rem]">
+                        Iniciar sesión
+                    </Link>
+                    <Link href="/register" className="button-primary w-[12rem]">
+                        Registro
+                    </Link>
                 </div>
             </nav>
             <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
                 <div className="fixed inset-0 z-10" />
                 <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-black px-6 py-6 sm:max-w-sm sm:ring-2 sm:ring-gray-100/10">
                     <div className="flex items-center justify-between">
-                        <a href="#" className="-m-1.5 p-1.5 flex justify-around items-center gap-1.5">
+                        <Link href="/" className="-m-1.5 p-1.5 flex justify-around items-center gap-1.5">
                             <Image
                                 alt="company"
                                 src={logo}
@@ -80,7 +84,7 @@ export default function Header() {
                                 className="object-cover object-center"
                             />
                             <span className="uppercase text-xl">Fit track</span>
-                        </a>
+                        </Link>
                         <button
                             type="button"
                             onClick={() => setMobileMenuOpen(false)}
@@ -103,20 +107,22 @@ export default function Header() {
                                                 ? "rounded-none border-b-[0.15rem] border-[#eefb03]"
                                                 : ""
                                         )}
+                                        onClick={() => setMobileMenuOpen(false)}
                                     >
                                         {item.name}
                                     </Link>
                                 ))}
                             </div>
                             <div className="py-6">
-                                <a
-                                    href="#"
+                                <Link
+                                    href="/iniciar-sesion"
                                     className={clsx(
                                         "-mx-3 block px-3 py-2 text-base/7 font-semibold text-white hover:rounded-lg hover:bg-gray-500"
                                     )}
+                                    onClick={() => setMobileMenuOpen(false)}
                                 >
                                     Iniciar sesión
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>
