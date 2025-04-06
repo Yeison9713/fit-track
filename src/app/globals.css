@@ -26,3 +26,41 @@ body {
 .button-primary {
     @apply bg-[#eefb03] rounded-4xl px-3 py-1.5 text-black uppercase cursor-pointer;
 }
+
+/* Estilos para el componente de planes */
+.title {
+    @apply mt-8 text-5xl text-center;
+}
+
+.description {
+    @apply mt-4 max-w-2xl mx-auto text-gray-400 text-center;
+}
+
+.plans {
+    @apply flex flex-wrap justify-center gap-8 py-8;
+}
+
+.plan {
+    @apply bg-[#111111] p-8 rounded-2xl w-72 text-left;
+}
+
+.plan h3 {
+    @apply text-white text-xl font-semibold;
+}
+
+.price {
+    @apply text-[#eefb03] font-bold text-2xl mt-2;
+}
+
+.plan ul {
+    @apply list-disc pl-5 text-white mt-4 space-y-1;
+}
+
+.plan button {
+    @apply mt-6 w-full bg-[#eefb03] text-black font-bold py-2 rounded-full transition-colors hover:bg-[#f7f90a] text-center;
+}
+
+.contactar {
+    @apply text-[#eefb03] font-bold mb-2 block no-underline text-center;
+}
+
