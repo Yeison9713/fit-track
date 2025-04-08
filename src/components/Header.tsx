@@ -14,7 +14,7 @@ const navigation = [
     { name: "Planes y membresias", href: "/planes-membresias" },
     { name: "servicios", href: "/servicios" },
     { name: "Contacto", href: "/contacto" },
-    { name: "Entrenadores", href: "/entrenadores" },
+    { name: "Testimonios", href: "/testimonios" },
 ];
 
 export default function Header() {
