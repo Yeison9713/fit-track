@@ -20,7 +20,7 @@ export default function Login() {
                     />
 
                     <p className="text-center text-sm text-gray-300">
-                        ¿No tienes una cuenta? <a href="/registro" className="text-[#eefb03] font-semibold">AQUÍ</a>
+                        ¿No tienes una cuenta? <a href="/register" className="text-[#eefb03] font-semibold">AQUÍ</a>
                     </p>
 
                     <button
