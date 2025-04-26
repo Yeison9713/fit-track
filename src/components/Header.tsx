@@ -115,7 +115,7 @@ export default function Header() {
                             </div>
                             <div className="py-6">
                                 <Link
-                                    href="/iniciar-sesion"
+                                    href="/login"
                                     className={clsx(
                                         "-mx-3 block px-3 py-2 text-base/7 font-semibold text-white hover:rounded-lg hover:bg-gray-500"
                                     )}
