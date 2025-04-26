@@ -34,7 +34,7 @@ export default function Header() {
                             style={{ objectFit: "contain" }}
                             className="object-cover object-center"
                         />
-                        <span className="uppercase text-xl">Fit track's</span>
+                        <span className="uppercase text-xl">Fit track</span>
                     </Link>
                 </div>
                 <div className="flex lg:hidden">
@@ -83,7 +83,7 @@ export default function Header() {
                                 style={{ objectFit: "contain" }}
                                 className="object-cover object-center"
                             />
-                            <span className="uppercase text-xl">Fit track's</span>
+                            <span className="uppercase text-xl">Fit track</span>
                         </Link>
                         <button
                             type="button"
