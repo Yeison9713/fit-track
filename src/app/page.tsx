@@ -11,7 +11,9 @@ export default function Home() {
                     <p className="text-lg lg:text-xl">Transforma tu cuerpo, supera tus limites.</p>
                 </div>
                 <div className="w-full pl-12">
-                    <button className="button-primary mt-5 text-sm lg:text-base w-[15rem] lg:w-[18rem]">Unete ahora</button>
+                    <button className="button-primary mt-5 text-sm lg:text-base w-[15rem] lg:w-[18rem]">
+                        Unete ahora
+                    </button>
                 </div>
             </div>
         </div>

@@ -8,6 +8,18 @@
 @theme {
     --color-background: var(--background);
     --color-foreground: var(--foreground);
+
+    --color-golden-fizz-50: #fbffe7;
+    --color-golden-fizz-100: #f2ffc2;
+    --color-golden-fizz-200: #e9ff87;
+    --color-golden-fizz-300: #e3ff43;
+    --color-golden-fizz-400: #e8ff10;
+    --color-golden-fizz-500: #eefb03;
+    --color-golden-fizz-600: #cfc900;
+    --color-golden-fizz-700: #a59303;
+    --color-golden-fizz-800: #88720b;
+    --color-golden-fizz-900: #735c10;
+    --color-golden-fizz-950: #433205;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,7 +36,7 @@ body {
 }
 
 .button-primary {
-    @apply bg-[#eefb03] rounded-4xl px-3 py-1.5 text-black uppercase cursor-pointer;
+    @apply bg-golden-fizz-500 rounded-4xl px-3 py-1.5 text-black uppercase cursor-pointer font-medium hover:bg-golden-fizz-300;
 }
 
 /* Estilos para el componente de planes */
@@ -63,4 +75,3 @@ body {
 .contactar {
     @apply text-[#eefb03] font-bold mb-2 block no-underline text-center;
 }
-

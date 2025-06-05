@@ -22,7 +22,7 @@ export default function Header() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     return (
-        <header className="bg-black text-white lg:py-6">
+        <header className="bg-black text-white lg:py-3">
             <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px- lg:gap-x-16">
                 <div className="flex">
                     <Link href="/" className="-m-1.5 p-1.5 flex justify-around items-center gap-1.5">
@@ -34,7 +34,7 @@ export default function Header() {
                             style={{ objectFit: "contain" }}
                             className="object-cover object-center"
                         />
-                        <span className="uppercase text-xl">Fit track</span>
+                        <span className="uppercase text-xl font-medi w-36">Fit track</span>
                     </Link>
                 </div>
                 <div className="flex lg:hidden">
@@ -47,25 +47,25 @@ export default function Header() {
                         <Bars3Icon aria-hidden="true" className="size-8" />
                     </button>
                 </div>
-                <div className="hidden lg:flex lg:gap-x-12">
+                <div className="hidden lg:flex lg:gap-x-12 lg:items-center">
                     {navigation.map(item => (
                         <Link
                             key={item.name}
                             href={item.href}
                             className={clsx(
-                                "text-base uppercase ",
-                                router == item.href ? "border-b-[0.15rem] border-[#eefb03]" : ""
+                                "py-1.5 px-3 text-base uppercase font-medium hover:bg-golden-fizz-300 hover:rounded-2xl hover:text-gray-950",
+                                router == item.href ? "border-b-[0.15rem] border-golden-fizz-500" : ""
                             )}
                         >
                             {item.name}
                         </Link>
                     ))}
                 </div>
-                <div className="hidden lg:flex lg:justify-center lg:gap-x-12 text-base">
-                    <Link href="/login" className="button-primary w-[12rem]">
+                <div className="hidden lg:flex lg:justify-center lg:gap-x-12 lg:items-center text-base">
+                    <Link href="/login" className="button-primary w-[11rem] text-center">
                         Iniciar sesión
                     </Link>
-                    <Link href="/register" className="button-primary w-[12rem]">
+                    <Link href="/register" className="button-primary w-[11rem] text-center">
                         Registro
                     </Link>
                 </div>
